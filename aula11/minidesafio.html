@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identificador de Nacionalidade</title>
+</head>
+<body>
+    <h1>Identificador de Nacionalidade</h1>
+    <input type="text" id="txtp">
+    <input type="button" value="VERFICAR" id="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+ 
+
+  <script>
+        /*function verificar() {
+      var p = document.querySelector('input#txtp')
+      var r = document.querySelector('div#res')
+      var n = String(p.value)
+
+      r.innerHTML += `<p>Atualmente você vive no ${n}.</p>`
+      if (n == 'Brasil') {
+        r.innerHTML += `<p>No entanto você é brasileiro.</p>`
+      } else {
+        r.innerHTML += `<p>No entando você é estrangeiro.</p>`
+      }
+    }*/
+
+    function verificar() {
+        var p = document.getElementById('txtp')
+        var r = document.getElementById('res')
+        var n = String(p.value)
+
+        r.innerHTML += `<p>Atualmente vc vive no ${n}.</p>`
+        if (n == 'Brasil') {
+            r.innerHTML += `<p>No entanto vc é BR</p>`
+        } else {
+            r.innerHTML += `<p>No entanto vc é estrangeiro.</p>`
+        }
+    }
+  </script>
+
+</body>
+</html>
